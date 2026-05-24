@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Code Blue by HIGHQUAL - Wewangian segar dengan aroma lautan, bergamot, cedar, dan musk. Untuk pria modern dan percaya diri.">
+    <title>Code Blue | HIGHQUAL Parfum</title>
+    <meta name="robots" content="noindex,nofollow">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-black: #1a1a1a;
+            --color-white: #ffffff;
+            --color-off-white: #fafafa;
+            --color-light-gray: #f5f5f5;
+            --color-gray: #e8e8e8;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --color-gold: #c9a962;
+            --color-blue: #4a90d9;
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Poppins', sans-serif;
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ========== Announcement Bar ========== */
+        .announcement-bar {
+            background: var(--color-white);
+            border-bottom: 1px solid var(--color-gray);
+            padding: 12px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+        }
+
+        .announcement-bar p {
+            margin: 0;
+            color: var(--color-text);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .announcement-bar span {
+            color: var(--color-gold);
+            font-weight: 500;
+        }
+
+        /* ========== Navbar ========== */
+        .navbar {
+            padding: 20px 0;
+            transition: var(--transition-smooth);
+            background: var(--color-white);
+            border-bottom: 1px solid var(--color-gray);
+            position: fixed;
+            top: 45px;
+            left: 0;
+            right: 0;
+            z-index: 1020;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: var(--color-black) !important;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-text) !important;
+            margin: 0 20px;
+            padding: 8px 0 !important;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--color-gold);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--color-gold) !important;
+        }
+
+        .btn-shop {
+            background: transparent;
+            border: 1px solid var(--color-black);
+            color: var(--color-black);
+            padding: 12px 30px;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-shop:hover {
+            background: var(--color-gold);
+            border-color: var(--color-gold);
+            color: var(--color-white) !important;
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 26, 26, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* ========== Product Hero Section ========== */
+        .product-hero {
+            padding: 170px 0 80px;
+            background: var(--color-off-white);
+            border-bottom: 1px solid var(--color-gray);
+        }
+
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .breadcrumb-item a {
+            color: var(--color-text-light);
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        .breadcrumb-item.active {
+            color: var(--color-black);
+            font-size: 0.8rem;
+        }
+
+        .product-image-main {
+            background: var(--color-white);
+            padding: 60px;
+            border: 1px solid var(--color-gray);
+            text-align: center;
+        }
+
+        .product-image-main img {
+            max-height: 500px;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
+        }
+
+        .product-badge {
+            display: inline-block;
+            background: var(--color-blue);
+            color: var(--color-white);
+            padding: 8px 20px;
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .product-name {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 500;
+            color: var(--color-black);
+            margin-bottom: 10px;
+        }
+
+        .product-character {
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+            margin-bottom: 25px;
+        }
+
+        .product-price {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            color: var(--color-black);
+            margin-bottom: 30px;
+        }
+
+        .product-price span {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            text-decoration: line-through;
+            margin-left: 15px;
+        }
+
+        .product-description {
+            color: var(--color-text-light);
+            line-height: 1.9;
+            margin-bottom: 35px;
+            font-size: 0.95rem;
+        }
+
+        .size-selector {
+            margin-bottom: 30px;
+        }
+
+        .size-selector label {
+            display: block;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: var(--color-black);
+        }
+
+        .size-options {
+            display: flex;
+            gap: 15px;
+        }
+
+        .size-option {
+            padding: 12px 25px;
+            border: 1px solid var(--color-gray);
+            background: var(--color-white);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            font-size: 0.85rem;
+        }
+
+        .size-option:hover,
+        .size-option.active {
+            border-color: var(--color-black);
+            background: var(--color-black);
+            color: var(--color-white);
+        }
+
+        .btn-add-cart {
+            background: var(--color-black);
+            color: var(--color-white);
+            padding: 18px 50px;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 0;
+            transition: var(--transition-smooth);
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .btn-add-cart:hover {
+            background: var(--color-gold);
+        }
+
+        .btn-wishlist {
+            background: transparent;
+            color: var(--color-black);
+            padding: 15px 50px;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border: 1px solid var(--color-gray);
+            border-radius: 0;
+            transition: var(--transition-smooth);
+            width: 100%;
+        }
+
+        .btn-wishlist:hover {
+            border-color: var(--color-black);
+        }
+
+        .product-features {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--color-gray);
+        }
+
+        .feature-item-small {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+        }
+
+        .feature-item-small i {
+            color: var(--color-gold);
+            font-size: 1.1rem;
+        }
+
+        /* ========== Fragrance Notes Section ========== */
+        .notes-section {
+            padding: 80px 0;
+            background: var(--color-white);
+        }
+
+        .section-label {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--color-black);
+            margin-bottom: 50px;
+        }
+
+        .note-category {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--color-off-white);
+            border: 1px solid var(--color-gray);
+            margin-bottom: 20px;
+        }
+
+        .note-category-title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            color: var(--color-black);
+            margin-bottom: 20px;
+        }
+
+        .note-category-items {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            line-height: 2;
+        }
+
+        /* ========== Story Section ========== */
+        .story-section {
+            padding: 80px 0;
+            background: var(--color-off-white);
+            border-top: 1px solid var(--color-gray);
+            border-bottom: 1px solid var(--color-gray);
+        }
+
+        .story-text {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: var(--color-text);
+        }
+
+        .story-highlight {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--color-black);
+            border-left: 3px solid var(--color-blue);
+            padding-left: 30px;
+            margin: 40px 0;
+        }
+
+        /* ========== Reviews Section ========== */
+        .reviews-section {
+            padding: 80px 0;
+            background: var(--color-white);
+        }
+
+        .review-card {
+            background: var(--color-off-white);
+            padding: 35px;
+            border: 1px solid var(--color-gray);
+            margin-bottom: 20px;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .reviewer-name {
+            font-weight: 500;
+            color: var(--color-black);
+        }
+
+        .review-date {
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+        }
+
+        .review-stars {
+            color: var(--color-gold);
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            line-height: 1.8;
+        }
+
+        /* ========== Related Products ========== */
+        .related-section {
+            padding: 80px 0;
+            background: var(--color-off-white);
+            border-top: 1px solid var(--color-gray);
+        }
+
+        .product-card-small {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray);
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .product-card-small:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            color: inherit;
+        }
+
+        .product-card-small img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .product-card-content {
+            padding: 25px;
+        }
+
+        .product-card-name {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--color-black);
+            margin-bottom: 5px;
+        }
+
+        .product-card-price {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
+        /* ========== Footer ========== */
+        .footer {
+            background: var(--color-white);
+            color: var(--color-text);
+            padding: 80px 0 40px;
+            border-top: 1px solid var(--color-gray);
+        }
+
+        .footer-brand {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: var(--color-black);
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .footer-desc {
+            color: var(--color-text-light);
+            font-size: 0.85rem;
+            line-height: 1.8;
+            max-width: 300px;
+        }
+
+        .footer-title {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-black);
+            margin-bottom: 25px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--color-text-light);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-gold);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--color-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text);
+            transition: var(--transition-smooth);
+        }
+
+        .social-links a:hover {
+            background: var(--color-gold);
+            border-color: var(--color-gold);
+            color: var(--color-white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--color-gray);
+            margin-top: 50px;
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: var(--color-text-light);
+            font-size: 0.75rem;
+            margin: 0;
+        }
+
+        /* Toast Notification */
+        .toast-container {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+        }
+
+        .toast-custom {
+            background: var(--color-black);
+            color: var(--color-white);
+            padding: 15px 30px;
+            border-left: 4px solid var(--color-gold);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .toast-custom.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .toast-custom i {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background: var(--color-white);
+                padding: 20px;
+                margin-top: 15px;
+                border: 1px solid var(--color-gray);
+            }
+
+            .product-name {
+                font-size: 2rem;
+            }
+
+            .product-image-main {
+                padding: 40px;
+                margin-bottom: 40px;
+            }
+
+            .product-image-main img {
+                max-height: 350px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .announcement-bar p {
+                font-size: 0.6rem;
+                letter-spacing: 1px;
+            }
+
+            .navbar {
+                top: 38px;
+            }
+
+            .product-hero {
+                padding: 140px 0 60px;
+            }
+
+            .product-name {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p><span>Gratis Ongkir</span> Pembelian Diatas Rp 1.500.000 | <span>Sampel Eksklusif</span> Setiap Pembelian</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="/images/logo.png" alt="HIGHQUAL" width="150" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#collection">Koleksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Ulasan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Kontak</a>
+                    </li>
+                </ul>
+                <a href="index.html#collection" class="btn btn-shop">Beli Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="index.html#collection">Koleksi</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Code Blue</li>
+                </ol>
+            </nav>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="product-image-main">
+                        <img src="/images/perfume-codeblue.png" alt="Code Blue" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="product-badge">Pilihan</span>
+                    <h1 class="product-name">Code Blue</h1>
+                    <p class="product-character">Segar • Maskulin • Modern</p>
+                    <p class="product-price">Rp 99.000 <span>Rp 150.000</span></p>
+                    <p class="product-description">
+                        Code Blue membawa kesegaran lautan yang dipadukan dengan kecerahan bergamot. Aroma dasar cedar dan musk memberikan kesan maskulin yang modern dan sophisticated. Wewangian sempurna untuk pria yang percaya diri dan dinamis.
+                    </p>
+
+                    <div class="size-selector">
+                        <label>Pilih Ukuran</label>
+                        <div class="size-options">
+                            <button class="size-option" onclick="selectSize(this, 2650000)">50ml</button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-add-cart" onclick="addToCart('Code Blue')">Tambah ke Keranjang</button>
+                    <button class="btn btn-wishlist" onclick="addToWishlist('Code Blue')">
+                        <i class="bi bi-heart me-2"></i>Tambah ke Wishlist
+                    </button>
+
+                    <div class="product-features">
+                        <div class="feature-item-small">
+                            <i class="bi bi-truck"></i>
+                            <span>Gratis ongkir untuk pembelian diatas Rp 1.500.000</span>
+                        </div>
+                        <div class="feature-item-small">
+                            <i class="bi bi-gift"></i>
+                            <span>Sampel eksklusif gratis setiap pembelian</span>
+                        </div>
+                        <div class="feature-item-small">
+                            <i class="bi bi-shield-check"></i>
+                            <span>Garansi keaslian 100%</span>
+                        </div>
+                        <div class="feature-item-small">
+                            <i class="bi bi-arrow-counterclockwise"></i>
+                            <span>Pengembalian dalam 30 hari</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fragrance Notes Section -->
+    <section class="notes-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <span class="section-label">Komposisi Aroma</span>
+                    <h2 class="section-title">Piramida Aroma</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="note-category">
+                        <h3 class="note-category-title">Top Notes</h3>
+                        <p class="note-category-items">Bergamot<br>Lemon<br>Marine Notes<br>Mint</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="note-category">
+                        <h3 class="note-category-title">Heart Notes</h3>
+                        <p class="note-category-items">Lavender<br>Geranium<br>Sage<br>Juniper</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="note-category">
+                        <h3 class="note-category-title">Base Notes</h3>
+                        <p class="note-category-items">Cedarwood<br>Musk<br>Ambergris<br>Patchouli</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="section-label">Cerita Produk</span>
+                    <h2 class="section-title">Energi Dari <br>Samudra</h2>
+                    <p class="story-text">
+                        Code Blue terinspirasi dari kekuatan samudra yang tak terbendung dan kesegaran angin laut. Diciptakan untuk pria modern yang menghargai keseimbangan antara kekuatan dan keanggunan.
+                    </p>
+                    <blockquote class="story-highlight">
+                        "Setiap semprotan membawa Anda ke tepi pantai, di mana ombak bertemu langit biru yang tak berujung."
+                    </blockquote>
+                    <p class="story-text">
+                        Marine notes langka dari Mediterania dipadukan dengan cedarwood dari Atlas Mountains, menciptakan aroma yang segar namun hangat, modern namun timeless.
+                    </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="/images/perfume-codeblue.png" alt="Code Blue Detail" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <span class="section-label">Ulasan Pelanggan</span>
+                    <h2 class="section-title">Apa Kata Mereka</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">James Chen</span>
+                            <span class="review-date">3 minggu lalu</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Ini adalah parfum aquatic terbaik yang pernah saya coba. Tidak terlalu strong tapi tetap tahan lama. Sangat cocok untuk cuaca panas dan acara kasual."</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">Michael Roberts</span>
+                            <span class="review-date">1 bulan lalu</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Code Blue menjadi signature scent saya untuk sehari-hari. Fresh, clean, dan professional. Banyak yang nanyain parfum apa yang saya pakai."</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">David Kim</span>
+                            <span class="review-date">2 bulan lalu</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="review-text">"Packagingnya sangat elegant dan masculine. Aroma lautnya authentic dan tidak seperti parfum murahan. Recommended banget!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">Thomas Wright</span>
+                            <span class="review-date">3 bulan lalu</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Sebagai kolektor parfum, saya bisa bilang Code Blue adalah salah satu aquatic fragrance terbaik di kelasnya. Worth the price!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <span class="section-label">Anda Mungkin Suka</span>
+                    <h2 class="section-title">Produk Terkait</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="darkness-poison.html" class="product-card-small">
+                        <img src="/images/perfume-darkness.png" alt="Darkness Poison">
+                        <div class="product-card-content">
+                            <h3 class="product-card-name">Darkness Poison</h3>
+                            <p class="product-card-price">Rp 2.850.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="callista-bloom.html" class="product-card-small">
+                        <img src="/images/perfume-callista.png" alt="Callista Bloom">
+                        <div class="product-card-content">
+                            <h3 class="product-card-name">Callista Bloom</h3>
+                            <p class="product-card-price">Rp 2.750.000</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <span class="footer-brand">HIGHQUAL</span>
+                    <p class="footer-desc">Meracik wewangian tak lekang oleh waktu yang menggambarkan keanggunan, gairah, dan seni hidup mewah sejak 2025.</p>
+                    <div class="social-links">
+                        <a onclick="showToast('Instagram: @lumiereparfum')" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a onclick="showToast('Facebook: LumiereParfum')" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a onclick="showToast('Twitter: @lumiereparfum')" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a onclick="showToast('Pinterest: LumiereParfum')" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Jelajahi</h4>
+                    <ul class="footer-links">
+                        <li><a href="darkness-poison.html">Darkness Poison</a></li>
+                        <li><a href="code-blue.html">Code Blue</a></li>
+                        <li><a href="callista-bloom.html">Callista Bloom</a></li>
+                        <li><a href="index.html#collection">Semua Produk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Perusahaan</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Tentang Kami</a></li>
+                        <li><a onclick="showToast('Menu: Cerita Kami')">Cerita Kami</a></li>
+                        <li><a onclick="showToast('Menu: Karir')">Karir</a></li>
+                        <li><a onclick="showToast('Menu: Pers')">Pers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Bantuan</h4>
+                    <ul class="footer-links">
+                        <li><a onclick="showToast('Menu: Hubungi Kami')">Hubungi Kami</a></li>
+                        <li><a onclick="showToast('Menu: Info Pengiriman')">Info Pengiriman</a></li>
+                        <li><a onclick="showToast('Menu: Pengembalian')">Pengembalian</a></li>
+                        <li><a onclick="showToast('Menu: FAQ')">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HIGHQUAL Parfum. Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Size selector
+        function selectSize(element, price) {
+            document.querySelectorAll('.size-option').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            element.classList.add('active');
+            
+            const priceFormatted = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(price);
+            
+            document.querySelector('.product-price').innerHTML = 
+                priceFormatted + ' <span>Rp 2.900.000</span>';
+        }
+
+        // Add to cart
+        function addToCart(productName) {
+            showToast(`${productName} telah ditambahkan ke keranjang!`);
+        }
+
+        // Add to wishlist
+        function addToWishlist(productName) {
+            showToast(`${productName} ditambahkan ke wishlist!`);
+        }
+
+        // Toast Notification
+        function showToast(message) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'toast-custom';
+            toast.innerHTML = `
+                <i class="bi bi-check-circle-fill"></i>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+            
+            setTimeout(() => toast.classList.add('show'), 10);
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
